@@ -1,0 +1,7 @@
+.barrer {
+  text-decoration: line-through;
+}
+li .show {
+  color: black;
+  opacity: 1 !important;
+}

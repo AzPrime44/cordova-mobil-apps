@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(126, 138, 148);
+}
+
+label,
+fieldset {
+  color: black;
+}
+
+#resultat {
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
+
+#button {
+  margin-top: 20px;
+}
+
+.ui-content {
+  width: 700px;
+  /* min-width: 500px; */
+}
+div.ui-field-contain {
+  display: flex;
+  justify-content: center;
+}

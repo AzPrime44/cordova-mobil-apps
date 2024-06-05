@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" /> -->
+    <link rel="stylesheet" href="lib/jquery.mobile.icons-1.4.5.min.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="lib/themes/theme.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Liste de taches</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+        <fieldset>
+          <label for="taskFieldText">Ajouter une tache</label>
+          <input type="text" id="taskFieldText" name="taskFieldText" />
+        </fieldset>
+        <input type="button" value="Ajouter" onclick="ajouter()" />
+        <input type="button" value="Reset" onclick="reset()" />
+        <div>
+          <div data-role="header" data-theme="b">
+            <h1>Liste de taches en cours</h1>
+          </div>
+          <ul
+            data-inset="true"
+            id="taskList"
+            data-role="listview"
+            data-theme="b"
+          ></ul>
+        </div>
+        <div id="doneTaskListContainer" hidden="true">
+          <div data-role="header" data-theme="c">
+            <h1>Liste de taches Terminer</h1>
+          </div>
+          <ul
+            data-inset="true"
+            id="doneTaskList"
+            data-role="listview"
+            data-theme="c"
+          ></ul>
+        </div>
+      </div>
+      <div id="console"></div>
+      <div data-role="footer" data-position="fixed">
+        <h1>DIC3 &copy; right 2024</h1>
+      </div>
+    </div>
+  </body>
+</html>
